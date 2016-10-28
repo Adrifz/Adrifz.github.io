@@ -5,7 +5,8 @@
  */
 
 html, body {
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Open Sans', sans-serif;
   height: 100%;
 }
 
@@ -33,7 +34,8 @@ html, body {
 ul { margin: 0; padding: 0; }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Open Sans', sans-serif;
 }
 h1 {
   display: inline-block;
@@ -61,7 +63,7 @@ a {
   color: #ffde36;
 }
 a:hover {
-  color: #402f48;
+  color: #a177b4;
   text-decoration: none;
 }
 .italic { font-style: italic; }
@@ -136,7 +138,7 @@ label {
 
 .form-control:focus {
   box-shadow: none;
-  border-color: #777;
+  border-color: #a177b4;
 }
 
 /* Empty space for empty columns */
@@ -186,7 +188,7 @@ label {
  */
  
 .navbar {
-  background-color: #fff;
+  background-color: #213260;
   border: none;
   top: -100px;
   
@@ -219,13 +221,13 @@ label {
     font-size: 30px;
     line-height: 70px;
     font-weight: normal;
-    color: #ffde36;
+    color: #a177b4;
     padding: 0 30px 0 0;
     -webkit-transition: .4s;
     transition: .4s;
   }
     .navbar a.navbar-brand span.glyphicon { top: 4px; font-size: 28px; }
-    .navbar a.navbar-brand:hover, .navbar a.navbar-brand:focus  { color: #000000; } 
+    .navbar a.navbar-brand:hover, .navbar a.navbar-brand:focus  { color: #a177b4; } 
 
   /* Smaller device menu styles */
   .navbar .navbar-toggle {
@@ -253,7 +255,7 @@ label {
   }
   .navbar .navbar-nav li a {
     margin: 20px 5px;
-    color: #777;
+    color: #e6e7e8;
     height: 30px;
     line-height: 30px;
     
@@ -267,7 +269,7 @@ label {
   }
     .navbar .navbar-nav li a:hover {
       color: #fff;
-      background-color: #ffde36;
+      background-color: #be92b5;
     }
     .navbar .navbar-nav li.dropdown.open a.dropdown-toggle {
       background-color: #bbb;
@@ -285,7 +287,7 @@ label {
         }
   .navbar .navbar-nav li.active a,
   .navbar .navbar-nav li.active a:hover {
-    background-color: #edc80e;
+    background-color: #a177b4;
   }
   
   @media (max-width: 992px) {
@@ -319,13 +321,11 @@ label {
   /* White Section */
   .section.white {
     background: none;
-    background-color: #eee;
+    background-color: #e6e7e8;
   }
-  .section.white {
-    background: url("../img/bird_pattern_1.png"); background-repeat: 
-  }  
+
     .section.white h1 {
-      color: #f4c532; 
+      color: #213260; 
     }    
     .section.white a.btn {
       color: #777;
@@ -337,8 +337,8 @@ label {
       border-color: #bbb;
     }
     .section.white a.btn.active { 
-      color: #dfba00;
-      border-color: #edc80e;
+      color: #213260;
+      border-color: #a177b4;
       box-shadow: none; 
       background-color: transparent;
     }
@@ -365,10 +365,9 @@ label {
     z-index: -1;
   }
   .section h1 {
-    font-family: 'Open Sans', sans-serif;
     display: block;
     text-align: center;
-    font-size: 35px;
+    font-size: 20px;
     color: #fff;
   }
   .welcome .scroll-down i {
@@ -378,6 +377,7 @@ label {
     margin-top: 20px;
     color: rgba(255,255,255,.9);
   }
+
   .welcome span.glyphicon {
     margin-top: 70px;
     color: rgba(255,255,255,.9);    
@@ -453,39 +453,15 @@ label {
   padding-bottom: 20px;
   position: relative;
   overflow: hidden;
-  background-color: #000;
+  background-color: #e6e7e8;
 } 
 
-#services h3{
-  font-family: 'Open Sans', sans-serif;
-} 
-
-#services h1{
-  font-size: 35px;
-} 
-
-  #services .background {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=.4)";
-  	filter: alpha(opacity=.4);
-  	opacity: .4;
-    -webkit-filter: grayscale(100%);
-
-    background: url("../img/office.jpg") fixed no-repeat;
-    background-size: cover;
-  }
   #services .service-icon {
     text-align: center;
     color: #fff;
   }
     #services .service-icon i:hover  {
-      background-color: #edc80e;
+      background-color: #a177b4;
       color: #fff;
     }
     #services .service-icon i {
@@ -510,6 +486,16 @@ label {
       display: block;
       margin-top: 20px;
     }
+
+    #services h1 {
+      font-family: 'Playfair Display', serif;
+      color: #213260;
+      font-size: 40px;
+      }
+
+       #services h3 {
+      color: #213260;
+      }
     
 @media (max-width: 420px) {
   #services {
@@ -523,21 +509,24 @@ label {
  *
  */
 
-#work {
+#portafolio {
   min-height: 0;
   color: #000;
 }
-  #work .controls { 
+  #portafolio .controls { 
     text-align: center; 
     margin-bottom: 20px;
   }
-    #work .controls .btn {
+    #portafolio .controls .btn {
       margin: 0 5px 10px 5px;
     }
-  #work h1 { 
-    margin-bottom: 35px;
-    font-size: 35px; 
+  #portafolio h1 { 
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 35px; 
+    font-size: 40px;
   }
+
+
 
 .gallery {
   padding: 0;
@@ -545,7 +534,7 @@ label {
 	font-size: 0.1px;
 	margin: 0;
   width: 100%;
-  background-color: #666;
+  background-color: #e6e7e8;
 }
   .gallery:after {
   	content: '';
@@ -586,7 +575,7 @@ label {
     .gallery span.cover {
       position: absolute;
       top: -100%;
-      background-color: #f4d432;
+      background-color: #213260;
     }
       .gallery span.cover span {
         color: #fff;
@@ -603,6 +592,7 @@ label {
       height: 100%;
       vertical-align: 0;
     }
+
 
   @media (max-width: 768px) {
     .gallery a.mix-cover:hover {
@@ -633,14 +623,16 @@ label {
  color: #444;
  min-height: 0;
  height: auto;
- padding-bottom: 20px;
+ padding-bottom: 0px;
  position: relative;
  overflow: hidden;
  background-color: #000;
 } 
   #clients h1 {
     margin-bottom: 50px;
-    font-size: 35px;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    color: #e6e7e8;
   }
   #clients .background {
     position: absolute;
@@ -734,10 +726,8 @@ label {
   }
   .pricing h3 {
     color: #555;
-    font-family: 'Open Sans', sans-serif;
     font-size: 28px;
   }
-
   .pricing span.price {
     display: block;
     color: #555;
@@ -768,7 +758,6 @@ label {
       margin: 20px 0;
     }
     .table thead tr th {
-      font-family: 'Open Sans', sans-serif;
       font-weight: normal;
       color: #8bc534;
       display: block;
@@ -781,8 +770,8 @@ label {
     .pricing .table td {
       border: 0;
       padding: 15px 0;
-      text-align: center;
-      font-family: 'Open Sans', sans-serif;
+      text-align: center
+      ;
     }
     
 @media (max-width: 768px) {
@@ -890,11 +879,9 @@ label {
 }
   .contact h3 {
     margin-top: 0;
-    font-family: 'Open Sans', sans-serif;
   }
   .contact p {
     color: #666;
-    font-family: 'Open Sans', sans-serif;
   }
   .contact span.glyphicon {
     color: #444;
